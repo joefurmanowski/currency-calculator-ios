@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdT-Jt-sg8">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5bg-l4-nRn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qdT-Jt-sg8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O93-Ve-IMG">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zjg-Ze-3bu" kind="relationship" relationship="rootViewController" id="8sR-E7-Stp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhy-cS-fmt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.53846153846155" y="24.881516587677723"/>
+        </scene>
+        <!--Currency Calculator-->
+        <scene sceneID="SP6-DW-Keb">
+            <objects>
+                <viewController id="Zjg-Ze-3bu" customClass="CalculatorViewController" customModule="CurrencyCalculatorApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOF-UG-DAd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-NN-WHf">
+                                <rect key="frame" x="30" y="195" width="330" height="108"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="nkJ-Nq-Jry">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Id-yK-Crb">
+                                                <rect key="frame" x="0.0" y="0.0" width="15.333333333333334" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-df-Vam">
+                                                <rect key="frame" x="143.33333333333337" y="0.0" width="186.66666666666663" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="6oR-kn-zfz">
+                                        <rect key="frame" x="0.0" y="74" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiQ-Q7-WaU">
+                                                <rect key="frame" x="0.0" y="0.0" width="12.666666666666666" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HWm-ob-166">
+                                                <rect key="frame" x="140.66666666666663" y="0.0" width="189.33333333333337" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="OYI-Ec-r2d">
+                                <rect key="frame" x="160.33333333333334" y="345" width="69.333333333333343" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgk-We-uBk">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="$ -&gt; ?"/>
+                                        <connections>
+                                            <action selector="convertToCurrency:" destination="Zjg-Ze-3bu" eventType="touchUpInside" id="5x5-WQ-Lw6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8qO-fh-cRr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OYI-Ec-r2d" firstAttribute="top" secondItem="MB9-NN-WHf" secondAttribute="bottom" constant="42" id="3Fm-HV-nk9"/>
+                            <constraint firstItem="OYI-Ec-r2d" firstAttribute="centerX" secondItem="8qO-fh-cRr" secondAttribute="centerX" id="ilE-i5-Osd"/>
+                            <constraint firstItem="8qO-fh-cRr" firstAttribute="trailing" secondItem="MB9-NN-WHf" secondAttribute="trailing" constant="30" id="nRg-li-Pz5"/>
+                            <constraint firstItem="MB9-NN-WHf" firstAttribute="leading" secondItem="8qO-fh-cRr" secondAttribute="leading" constant="30" id="sxG-TH-uIy"/>
+                            <constraint firstItem="MB9-NN-WHf" firstAttribute="top" secondItem="8qO-fh-cRr" secondAttribute="top" constant="104" id="wm2-MB-4CK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Currency Calculator" id="oVG-c9-ogg">
+                        <barButtonItem key="rightBarButtonItem" title="$ -&gt; ?" id="mpH-ke-6Df">
+                            <connections>
+                                <segue destination="G9u-6w-lBN" kind="show" identifier="currencySelectionSegue" id="PYT-Me-lYi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="convertButton" destination="pgk-We-uBk" id="vvu-ui-im9"/>
+                        <outlet property="currencyAmount" destination="HWm-ob-166" id="EyK-rg-dTp"/>
+                        <outlet property="currencySymbol" destination="KiQ-Q7-WaU" id="tm1-Sc-Iln"/>
+                        <outlet property="dollarAmount" destination="wPC-df-Vam" id="jv9-nK-T6P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5g-fM-nO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.7692307692307" y="24.881516587677723"/>
+        </scene>
+        <!--Select Currency-->
+        <scene sceneID="8Yl-5V-cTH">
+            <objects>
+                <tableViewController id="G9u-6w-lBN" customClass="CurrencyListTableViewController" customModule="CurrencyCalculatorApp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JKi-jJ-Sg8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="currencyCell" textLabel="jnf-X6-J3B" detailTextLabel="8l0-TW-d21" style="IBUITableViewCellStyleSubtitle" id="Oh9-gw-gso">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oh9-gw-gso" id="q1P-0m-Jlw">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jnf-X6-J3B">
+                                            <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8l0-TW-d21">
+                                            <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G9u-6w-lBN" id="JZn-zG-6A0"/>
+                            <outlet property="delegate" destination="G9u-6w-lBN" id="VvI-wz-djU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Currency" id="sGS-ZX-cOg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAo-FY-i15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
